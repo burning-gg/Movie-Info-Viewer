@@ -26,9 +26,11 @@ export const Content = styled.div`
   background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
 
-  @media screen and(max-width: 768px) {
-    display: block;
+  @media screen and (max-width: 768px) {
     max-height: none;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 `;
 

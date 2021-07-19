@@ -11,6 +11,7 @@ import {
   LogoImg,
   TMDBLogoImg,
   LogBtn,
+  User,
 } from "./Header.styles";
 
 import { Context } from "../../context";
@@ -43,7 +44,7 @@ const Header = () => {
         </Link>
         {user ? (
           <>
-            <span>Logged in as: {user.username}</span>
+            <User>Logged in as: {user.username}</User>
             <LogBtn onClick={handleLogout}>Log out</LogBtn>
           </>
         ) : (
